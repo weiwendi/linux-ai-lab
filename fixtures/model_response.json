@@ -1,0 +1,13 @@
+{
+  "summary": "demo-api 出现连续的 upstream timeout",
+  "severity": "warning",
+  "evidence": [
+    "req-002 status=502 upstream=timeout",
+    "req-003 status=502 upstream=10.20.0.8:8080"
+  ],
+  "next_checks": [
+    "检查上游 10.20.0.8:8080 是否可达",
+    "检查服务的连接和读取超时配置",
+    "核对上游服务同期日志"
+  ]
+}

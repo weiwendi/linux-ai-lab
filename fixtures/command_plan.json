@@ -1,0 +1,14 @@
+{
+  "purpose": "查看根分区空间使用情况",
+  "argv": [
+    "df",
+    "-h",
+    "/"
+  ],
+  "risk": "read_only",
+  "evidence_needed": [
+    "filesystem_usage"
+  ],
+  "timeout_seconds": 10
+}
+
